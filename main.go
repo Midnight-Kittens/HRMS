@@ -23,7 +23,7 @@ const dbName = "fiber-hrms"
 const mongoURI = "mongodb+srv://apelkey:**************@cluster0.ggq0cju.mongodb.net/?retryWrites=true&w=majority" + dbName
 
 type Employee struct {
-	ID		string	`json:"id,omitempty" bson:"_id, omitempty`
+	ID		string	`json:"id,omitempty" bson:"_id,omitempty`
 	Name	string	`json:"name" bson:"name"`
 	Salary	float64	`json:"salary" bson"salary"`
 	Age		float64	`json:"age" bson"age"`
